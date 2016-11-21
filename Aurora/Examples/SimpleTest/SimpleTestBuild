@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+# set -o xtrace
+
+# 2016-11-21 
+# Build script for SimpleTest Xcode project
+
+
+build_xcode_project_for_target()
+{
+	printf "${FUNCNAME[0]}\n"
+	
+	local projectName=$1
+	local targetName=$2
+	xcodebuild \
+		-project ${projectName} \
+		-target ${targetName} \
+			-configuration Debug \
+			CONFIGURATION_BUILD_DIR=${BUILDPATH}/Debug \
+			clean build | xcpretty
+	# if you want to use egrep instead of xcpretty
+	#| egrep -A 5 "(error|warning):"
+	
+}
+
+setup_path_variables()
+{
+	CURRENTPATH=${PWD}
+	cd ${ABSOLUTE_PATH}
+	BUILDPATH=${PWD}/xcbuild
+	cd ../..
+	BASEPATH=${PWD}
+}
+main()
+{
+	setup_path_variables
+	
+	cd ${BASEPATH}/External/libRocket/Build
+	build_xcode_project_for_target Rocket.xcodeproj RocketControlsOSX
+	
+	cd ${ABSOLUTE_PATH}
+	build_xcode_project_for_target SimpleTest.xcodeproj SimpleTest
+}
+
+ABSOLUTE_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+ABSOLUTE_PATH=`dirname ${ABSOLUTE_SCRIPT_PATH}`
+
+main
