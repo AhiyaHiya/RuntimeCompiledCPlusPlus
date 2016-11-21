@@ -1,0 +1,16 @@
+//
+//  SimpleTest.xcconfig
+//  SimpleTest
+//
+//  Created by Jaime Rios on 11/21/16.
+//  Copyright © 2016 Doug Binks. All rights reserved.
+//
+
+
+//SDKROOT =
+HEADER_SEARCH_PATHS = ../../External/glfw/include ../../External/boost/ ../../External/libRocket/include/
+LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../External/glfw/libOSX" "$(SRCROOT)/../../External/boost/stage/libOSX" "$(SRCROOT)/../../External/support/lib/MacOSX" /usr/lib/system ${PROJECT_DIR}/../../External/libRocket/Build/build/Release
+
+//"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/Aurora-amgiihqkoasuvzdugsovjupxbfdk/Build/Products/Debug"
+
+
