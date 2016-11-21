@@ -16,12 +16,12 @@ BuildXcodeProjectForTarget()
 	local projectName=$1
 	local targetName=$2
 	local config=$3
-	local buildDir=$4
+
 	xcodebuild \
 		-project ${projectName} \
 		-target ${targetName} \
 			-configuration ${config} \
-			CONFIGURATION_BUILD_DIR=${buildDir} \
+			CONFIGURATION_BUILD_DIR=${BUILDPATH}/${config} \
 			clean build | xcpretty
 	# if you want to use egrep instead of xcpretty
 	#| egrep -A 5 "(error|warning):"
@@ -42,20 +42,23 @@ main()
 	SetupPathVariables
 	
 	cd ${BASEPATH}/Renderer
-	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer Release "${PWD}/build/Release"
+	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer Release
 		
 	cd ${BASEPATH}/RuntimeCompiler
-	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler Release "${PWD}/build/Release"
+	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler Release
 
 	cd ${BASEPATH}/RuntimeObjectSystem
-	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem Release "${PWD}/build/Release"
+	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem Release
 
+	cd ${BASEPATH}/Systems
+	BuildXcodeProjectForTarget Systems.xcodeproj Systems Release
+	
 	cd ${BASEPATH}/External/libRocket/Build
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX Release "${PWD}/build/Release"
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX Release "${PWD}/build/Release"
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX Release
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX Release
 		
 	cd ${ABSOLUTE_PATH}
-	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest Debug "${BUILDPATH}/Debug"
+	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest Release
 }
 
 ABSOLUTE_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
