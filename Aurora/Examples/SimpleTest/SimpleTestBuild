@@ -9,24 +9,26 @@ set -o nounset
 # Build script for SimpleTest Xcode project
 
 
-build_xcode_project_for_target()
+BuildXcodeProjectForTarget()
 {
 	printf "${FUNCNAME[0]}\n"
 	
 	local projectName=$1
 	local targetName=$2
+	local config=$3
+	local buildDir=$4
 	xcodebuild \
 		-project ${projectName} \
 		-target ${targetName} \
-			-configuration Debug \
-			CONFIGURATION_BUILD_DIR=${BUILDPATH}/Debug \
+			-configuration ${config} \
+			CONFIGURATION_BUILD_DIR=${buildDir} \
 			clean build | xcpretty
 	# if you want to use egrep instead of xcpretty
 	#| egrep -A 5 "(error|warning):"
 	
 }
 
-setup_path_variables()
+SetupPathVariables()
 {
 	CURRENTPATH=${PWD}
 	cd ${ABSOLUTE_PATH}
@@ -34,15 +36,17 @@ setup_path_variables()
 	cd ../..
 	BASEPATH=${PWD}
 }
+
 main()
 {
-	setup_path_variables
+	SetupPathVariables
 	
 	cd ${BASEPATH}/External/libRocket/Build
-	build_xcode_project_for_target Rocket.xcodeproj RocketControlsOSX
-	
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX Release "${PWD}/build/Release"
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX Release "${PWD}/build/Release"
+		
 	cd ${ABSOLUTE_PATH}
-	build_xcode_project_for_target SimpleTest.xcodeproj SimpleTest
+	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest Debug "${BUILDPATH}/Debug"
 }
 
 ABSOLUTE_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
