@@ -9,8 +9,9 @@
 
 //SDKROOT =
 HEADER_SEARCH_PATHS = ../../External/glfw/include ../../External/boost/ ../../External/libRocket/include/
-LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../External/glfw/libOSX" "$(SRCROOT)/../../External/boost/stage/libOSX" "$(SRCROOT)/../../External/support/lib/MacOSX" /usr/lib/system ${PROJECT_DIR}/../../External/libRocket/Build/build/Release
+LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../External/glfw/libOSX" "$(SRCROOT)/../../External/support/lib/MacOSX" /usr/lib/system ${PROJECT_DIR}/../../External/libRocket/Build/build/Release
 
+//"$(SRCROOT)/../../External/boost/stage/libOSX"
 //"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/Aurora-amgiihqkoasuvzdugsovjupxbfdk/Build/Products/Debug"
 
 

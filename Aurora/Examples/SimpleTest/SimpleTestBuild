@@ -41,6 +41,15 @@ main()
 {
 	SetupPathVariables
 	
+	cd ${BASEPATH}/Renderer
+	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer Release "${PWD}/build/Release"
+		
+	cd ${BASEPATH}/RuntimeCompiler
+	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler Release "${PWD}/build/Release"
+
+	cd ${BASEPATH}/RuntimeObjectSystem
+	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem Release "${PWD}/build/Release"
+
 	cd ${BASEPATH}/External/libRocket/Build
 	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX Release "${PWD}/build/Release"
 	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX Release "${PWD}/build/Release"
