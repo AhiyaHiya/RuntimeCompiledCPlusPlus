@@ -40,25 +40,25 @@ SetupPathVariables()
 main()
 {
 	SetupPathVariables
-	
+	local config=Debug
 	cd ${BASEPATH}/Renderer
-	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer Release
+	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer ${config}
 		
 	cd ${BASEPATH}/RuntimeCompiler
-	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler Release
+	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler ${config}
 
 	cd ${BASEPATH}/RuntimeObjectSystem
-	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem Release
+	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem ${config}
 
 	cd ${BASEPATH}/Systems
-	BuildXcodeProjectForTarget Systems.xcodeproj Systems Release
+	BuildXcodeProjectForTarget Systems.xcodeproj Systems ${config}
 	
 	cd ${BASEPATH}/External/libRocket/Build
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX Release
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX Release
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX ${config}
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX ${config}
 		
 	cd ${ABSOLUTE_PATH}
-	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest Release
+	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest ${config}
 }
 
 ABSOLUTE_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
