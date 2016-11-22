@@ -61,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D5E24A21DE49ABD00312AAC /* Systems.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Systems.xcconfig; sourceTree = "<group>"; };
 		91045332162060F40068AA25 /* libSystems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSystems.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		911906A01620614900BE48ED /* AssetSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetSystem.cpp; sourceTree = "<group>"; };
 		911906A11620614900BE48ED /* AssetSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetSystem.h; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 		91045327162060F40068AA25 = {
 			isa = PBXGroup;
 			children = (
+				2D5E24A21DE49ABD00312AAC /* Systems.xcconfig */,
 				9119069F1620614900BE48ED /* AssetSystem */,
 				911906A21620614900BE48ED /* Definitions.inl */,
 				911906A31620614900BE48ED /* EntitySystem */,
@@ -394,13 +396,12 @@
 /* Begin XCBuildConfiguration section */
 		91045334162060F40068AA25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5E24A21DE49ABD00312AAC /* Systems.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -421,14 +422,13 @@
 		};
 		91045335162060F40068AA25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5E24A21DE49ABD00312AAC /* Systems.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
