@@ -386,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/usr/bin/env bash\n\nsource ${PROJECT_DIR}/SimpleTestBuild.sh\n\nSetupVariables ${CONFIGURATION}\nBuildFrameworks\n";
+			shellScript = "\nABSOLUTE_SCRIPT_PATH=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)/$(basename \"${BASH_SOURCE[0]}\")\"\nABSOLUTE_PATH=`dirname ${ABSOLUTE_SCRIPT_PATH}`\n\n\nsource ${PROJECT_DIR}/SimpleTestBuild.sh\n\nSetupVariables ${CONFIGURATION}\nBuildFrameworks\n";
 			showEnvVarsInLog = 0;
 		};
 		2D417FDE1DE5219000755FAB /* ShellScript */ = {
@@ -400,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/usr/bin/env bash\n\nsource ${PROJECT_DIR}/SimpleTestBuild.sh\n\nSetupVariables ${CONFIGURATION}\nCopyFrameworksAndLibs";
+			shellScript = "\nABSOLUTE_SCRIPT_PATH=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)/$(basename \"${BASH_SOURCE[0]}\")\"\nABSOLUTE_PATH=`dirname ${ABSOLUTE_SCRIPT_PATH}`\n\nsource ${PROJECT_DIR}/SimpleTestBuild.sh\n\nSetupVariables ${CONFIGURATION}\nCopyFrameworksAndLibs";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
