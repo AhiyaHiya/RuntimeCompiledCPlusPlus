@@ -6,22 +6,20 @@
 //  Copyright © 2016 Doug Binks. All rights reserved.
 //
 
-// This folder is created by the build script, SimpleTestBuild
-PROJECT_BUILD_OUTPUT=${PROJECT_DIR}/xcbuild/${CONFIGURATION}
-
-//SDKROOT =
-FRAMEWORK_SEARCH_PATHS = ${PROJECT_BUILD_OUTPUT}
-HEADER_SEARCH_PATHS = ../../External/glfw/include ../../External/boost/ ../../External/libRocket/include/
-LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../External/glfw/libOSX" "$(SRCROOT)/../../External/support/lib/MacOSX" /usr/lib/system ${PROJECT_BUILD_OUTPUT}
-
-//${PROJECT_DIR}/../../External/libRocket/Build/build/${CONFIGURATION}
-//"$(SRCROOT)/../../External/boost/stage/libOSX"
-//"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/Aurora-amgiihqkoasuvzdugsovjupxbfdk/Build/Products/Debug"
-
-
-OTHER_LDFLAGS = -lRenderer -lRuntimeCompiler -lRuntimeObjectSystem -lSystems -framework RocketCoreOSX -framework RocketControlsOSX -framework RocketDebuggerOSX
-
 
 GCC_C_LANGUAGE_STANDARD = c11
 CLANG_CXX_LANGUAGE_STANDARD = c++11
 CLANG_CXX_LIBRARY = libc++
+
+SYMROOT=${PROJECT_DIR}/xcbuild
+
+// This folder is created by the build script, SimpleTestBuild
+PROJECT_BUILD_OUTPUT=${PROJECT_DIR}/xcbuild/Products/${CONFIGURATION}/Frameworks
+
+FRAMEWORK_SEARCH_PATHS = ${PROJECT_BUILD_OUTPUT}
+HEADER_SEARCH_PATHS = ../../External/glfw/include ../../External/boost/ ../../External/libRocket/include/
+LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../External/glfw/libOSX" "$(SRCROOT)/../../External/support/lib/MacOSX" /usr/lib/system ${PROJECT_BUILD_OUTPUT}
+
+OTHER_LDFLAGS = -lRenderer -lRuntimeObjectSystem -framework RocketCoreOSX -lRuntimeCompiler -framework RocketControlsOSX -framework RocketDebuggerOSX -lSystems
+
+LD_RUNPATH_SEARCH_PATHS = @loader_path/../Frameworks
