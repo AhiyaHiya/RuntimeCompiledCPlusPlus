@@ -16,20 +16,22 @@ BuildXcodeProjectForTarget()
 	local projectName=$1
 	local targetName=$2
 	local config=$3
+	local configPath=$4
 
 	xcodebuild \
 		-project ${projectName} \
 		-target ${targetName} \
 			-configuration ${config} \
-			CONFIGURATION_BUILD_DIR=${BUILDPATH}/${config} \
+			CONFIGURATION_BUILD_DIR=${configPath} \
 			clean build | xcpretty
 	# if you want to use egrep instead of xcpretty
 	#| egrep -A 5 "(error|warning):"
 	
 }
 
-SetupPathVariables()
+SetupVariables()
 {
+	CONFIG=Debug
 	CURRENTPATH=${PWD}
 	cd ${ABSOLUTE_PATH}
 	BUILDPATH=${PWD}/xcbuild
@@ -37,28 +39,45 @@ SetupPathVariables()
 	BASEPATH=${PWD}
 }
 
-main()
+BuildFrameworks()
 {
-	SetupPathVariables
-	local config=Debug
 	cd ${BASEPATH}/Renderer
-	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer ${config}
+	local frameworkBuildPath=${BUILDPATH}/Products/${CONFIG}/Frameworks
+	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer ${CONFIG} ${frameworkBuildPath}
 		
 	cd ${BASEPATH}/RuntimeCompiler
-	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler ${config}
+	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler ${CONFIG} ${frameworkBuildPath}
 
 	cd ${BASEPATH}/RuntimeObjectSystem
-	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem ${config}
+	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem ${CONFIG} ${frameworkBuildPath}
 
 	cd ${BASEPATH}/Systems
-	BuildXcodeProjectForTarget Systems.xcodeproj Systems ${config}
+	BuildXcodeProjectForTarget Systems.xcodeproj Systems ${CONFIG} ${frameworkBuildPath}
 	
 	cd ${BASEPATH}/External/libRocket/Build
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX ${config}
-	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX ${config}
-		
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX ${CONFIG} ${frameworkBuildPath}
+	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX ${CONFIG} ${frameworkBuildPath}
+}
+
+BuildSimpleTest()
+{
 	cd ${ABSOLUTE_PATH}
-	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest ${config}
+	local buildPath=${BUILDPATH}/Products/${CONFIG}
+	BuildXcodeProjectForTarget SimpleTest.xcodeproj SimpleTest ${CONFIG} ${buildPath}
+}
+
+CopyFrameworksAndLibs()
+{
+	cd ${ABSOLUTE_PATH}
+	cp -R ${BUILDPATH}/Products/${CONFIG}/Frameworks ${BUILDPATH}/Products/${CONFIG}/SimpleTest.app/Contents/Frameworks
+}
+
+main()
+{
+	SetupVariables
+	BuildFrameworks
+	BuildSimpleTest
+	CopyFrameworksAndLibs
 }
 
 ABSOLUTE_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
