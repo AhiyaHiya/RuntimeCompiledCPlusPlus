@@ -62,6 +62,128 @@
 		91D03E3B16248B120044DC3F /* libfreetype.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 910A9E901623284B0032E310 /* libfreetype.6.dylib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2D3185A71DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1BF0123AAEE200C451C8;
+			remoteInfo = RocketControlsiOS;
+		};
+		2D3185A91DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1E6B123ABCEF00C451C8;
+			remoteInfo = RocketControlsOSX;
+		};
+		2D3185AB1DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1B0C123A0E2A00C451C8;
+			remoteInfo = RocketCoreiOS;
+		};
+		2D3185AD1DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1DDC123ABC7800C451C8;
+			remoteInfo = RocketCoreOSX;
+		};
+		2D3185AF1DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1EBC123AC7A200C451C8;
+			remoteInfo = RocketDebuggeriOS;
+		};
+		2D3185B11DE5544100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E8B1EC6123AC80700C451C8;
+			remoteInfo = RocketDebuggerOSX;
+		};
+		2D3185B71DE5544B00F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185B31DE5544A00F9EE91 /* Renderer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 910A9D7C162302540032E310;
+			remoteInfo = Renderer;
+		};
+		2D3185BD1DE5545A00F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185B91DE5545A00F9EE91 /* Systems.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 91045332162060F40068AA25;
+			remoteInfo = Systems;
+		};
+		2D3185C31DE554B500F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185BF1DE554B500F9EE91 /* RuntimeObjectSystem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 913A25D21619FB7D006AF4C1;
+			remoteInfo = RuntimeObjectSystem;
+		};
+		2D3185C91DE554C100F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185C51DE554C100F9EE91 /* RuntimeCompiler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 919FE7001619F04600A269B6;
+			remoteInfo = RuntimeCompiler;
+		};
+		2D3185CB1DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185C51DE554C100F9EE91 /* RuntimeCompiler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 919FE6FF1619F04600A269B6;
+			remoteInfo = RuntimeCompiler;
+		};
+		2D3185CD1DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185BF1DE554B500F9EE91 /* RuntimeObjectSystem.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 913A25D11619FB7D006AF4C1;
+			remoteInfo = RuntimeObjectSystem;
+		};
+		2D3185CF1DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185B91DE5545A00F9EE91 /* Systems.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 91045331162060F40068AA25;
+			remoteInfo = Systems;
+		};
+		2D3185D11DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3185B31DE5544A00F9EE91 /* Renderer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 910A9D7B162302540032E310;
+			remoteInfo = Renderer;
+		};
+		2D3185D31DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8B1E6A123ABCEF00C451C8;
+			remoteInfo = RocketControlsOSX;
+		};
+		2D3185D51DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8B1DDB123ABC7800C451C8;
+			remoteInfo = RocketCoreOSX;
+		};
+		2D3185D71DE554D400F9EE91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8B1EC5123AC80700C451C8;
+			remoteInfo = RocketDebuggerOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		910A9E8F162328120032E310 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -76,15 +198,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9107152E162740B00069C8C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		91071531162740B80069C8C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		91071533162740CD0069C8C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		91071535162740FD0069C8C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rocket.xcodeproj; path = ../../External/libRocket/Build/Rocket.xcodeproj; sourceTree = "<group>"; };
+		2D3185B31DE5544A00F9EE91 /* Renderer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Renderer.xcodeproj; path = ../../Renderer/Renderer.xcodeproj; sourceTree = "<group>"; };
+		2D3185B91DE5545A00F9EE91 /* Systems.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Systems.xcodeproj; path = ../../Systems/Systems.xcodeproj; sourceTree = "<group>"; };
+		2D3185BF1DE554B500F9EE91 /* RuntimeObjectSystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RuntimeObjectSystem.xcodeproj; path = ../../RuntimeObjectSystem/RuntimeObjectSystem.xcodeproj; sourceTree = "<group>"; };
+		2D3185C51DE554C100F9EE91 /* RuntimeCompiler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RuntimeCompiler.xcodeproj; path = ../../RuntimeCompiler/RuntimeCompiler.xcodeproj; sourceTree = "<group>"; };
 		910A9D9E16230A370032E310 /* SimpleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		910A9DA216230A370032E310 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		910A9DA516230A370032E310 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		910A9DA616230A370032E310 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		910A9DA716230A370032E310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		910A9DC616230BE50032E310 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = ../External/glfw/libOSX/libglfw.a; sourceTree = "<group>"; };
 		910A9DC816230D880032E310 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		910A9DCD162310BB0032E310 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
@@ -181,9 +301,6 @@
 		910A9E881623233F0032E310 /* RocketDebuggerOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RocketDebuggerOSX.framework; path = ../../External/libRocket/Build/build/Release/RocketDebuggerOSX.framework; sourceTree = "<group>"; };
 		910A9E901623284B0032E310 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../External/support/lib/MacOSX/libfreetype.6.dylib; sourceTree = "<group>"; };
 		910A9EF516232E2A0032E310 /* SimpleTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleTest-Info.plist"; sourceTree = "<group>"; };
-		91448C03162731940026BFC8 /* libmacho.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmacho.dylib; path = /usr/lib/system/libmacho.dylib; sourceTree = "<absolute>"; };
-		91448C06162731B20026BFC8 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
-		91448C08162732840026BFC8 /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = /System/Library/Frameworks/System.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,9 +325,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D31859D1DE5541100F9EE91 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185C51DE554C100F9EE91 /* RuntimeCompiler.xcodeproj */,
+				2D3185BF1DE554B500F9EE91 /* RuntimeObjectSystem.xcodeproj */,
+				2D3185B91DE5545A00F9EE91 /* Systems.xcodeproj */,
+				2D3185B31DE5544A00F9EE91 /* Renderer.xcodeproj */,
+				2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		2D31859F1DE5544100F9EE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185A81DE5544100F9EE91 /* libRocketControlsiOS.a */,
+				2D3185AA1DE5544100F9EE91 /* RocketControlsOSX.framework */,
+				2D3185AC1DE5544100F9EE91 /* libRocketCoreiOS.a */,
+				2D3185AE1DE5544100F9EE91 /* RocketCoreOSX.framework */,
+				2D3185B01DE5544100F9EE91 /* libRocketDebuggeriOS.a */,
+				2D3185B21DE5544100F9EE91 /* RocketDebuggerOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D3185B41DE5544A00F9EE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185B81DE5544B00F9EE91 /* libRenderer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D3185BA1DE5545A00F9EE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185BE1DE5545A00F9EE91 /* libSystems.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D3185C01DE554B500F9EE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185C41DE554B500F9EE91 /* libRuntimeObjectSystem.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D3185C61DE554C100F9EE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3185CA1DE554C100F9EE91 /* libRuntimeCompiler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		910A9D9316230A370032E310 = {
 			isa = PBXGroup;
 			children = (
+				2D31859D1DE5541100F9EE91 /* Dependencies */,
 				91D03E3C16249DFB0044DC3F /* RuntimeModifiableInterfaces */,
 				91D8765216242DF000A588D8 /* RuntimeModifiableSource */,
 				910A9E28162313EF0032E310 /* CompilerLogger.cpp */,
@@ -243,13 +418,6 @@
 		910A9DA116230A370032E310 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91071535162740FD0069C8C5 /* SystemConfiguration.framework */,
-				91071533162740CD0069C8C5 /* Cocoa.framework */,
-				91071531162740B80069C8C5 /* AppKit.framework */,
-				9107152E162740B00069C8C5 /* Foundation.framework */,
-				91448C08162732840026BFC8 /* System.framework */,
-				91448C06162731B20026BFC8 /* Kernel.framework */,
-				91448C03162731940026BFC8 /* libmacho.dylib */,
 				910A9E901623284B0032E310 /* libfreetype.6.dylib */,
 				910A9E861623233E0032E310 /* RocketControlsOSX.framework */,
 				910A9E871623233F0032E310 /* RocketCoreOSX.framework */,
@@ -264,19 +432,8 @@
 				910A9DC616230BE50032E310 /* libglfw.a */,
 				910A9DC816230D880032E310 /* OpenGL.framework */,
 				910A9DA216230A370032E310 /* Cocoa.framework */,
-				910A9DA416230A370032E310 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		910A9DA416230A370032E310 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				910A9DA516230A370032E310 /* AppKit.framework */,
-				910A9DA616230A370032E310 /* CoreData.framework */,
-				910A9DA716230A370032E310 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		910A9DA816230A370032E310 /* SimpleTestBundle */ = {
@@ -386,6 +543,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				2D3185CC1DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185CE1DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185D01DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185D21DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185D41DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185D61DE554D400F9EE91 /* PBXTargetDependency */,
+				2D3185D81DE554D400F9EE91 /* PBXTargetDependency */,
 			);
 			name = SimpleTest;
 			productName = SimpleTest;
@@ -411,12 +575,107 @@
 			mainGroup = 910A9D9316230A370032E310;
 			productRefGroup = 910A9D9F16230A370032E310 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2D3185B41DE5544A00F9EE91 /* Products */;
+					ProjectRef = 2D3185B31DE5544A00F9EE91 /* Renderer.xcodeproj */;
+				},
+				{
+					ProductGroup = 2D31859F1DE5544100F9EE91 /* Products */;
+					ProjectRef = 2D31859E1DE5544100F9EE91 /* Rocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 2D3185C61DE554C100F9EE91 /* Products */;
+					ProjectRef = 2D3185C51DE554C100F9EE91 /* RuntimeCompiler.xcodeproj */;
+				},
+				{
+					ProductGroup = 2D3185C01DE554B500F9EE91 /* Products */;
+					ProjectRef = 2D3185BF1DE554B500F9EE91 /* RuntimeObjectSystem.xcodeproj */;
+				},
+				{
+					ProductGroup = 2D3185BA1DE5545A00F9EE91 /* Products */;
+					ProjectRef = 2D3185B91DE5545A00F9EE91 /* Systems.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				910A9D9D16230A370032E310 /* SimpleTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D3185A81DE5544100F9EE91 /* libRocketControlsiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRocketControlsiOS.a;
+			remoteRef = 2D3185A71DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185AA1DE5544100F9EE91 /* RocketControlsOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RocketControlsOSX.framework;
+			remoteRef = 2D3185A91DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185AC1DE5544100F9EE91 /* libRocketCoreiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRocketCoreiOS.a;
+			remoteRef = 2D3185AB1DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185AE1DE5544100F9EE91 /* RocketCoreOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RocketCoreOSX.framework;
+			remoteRef = 2D3185AD1DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185B01DE5544100F9EE91 /* libRocketDebuggeriOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRocketDebuggeriOS.a;
+			remoteRef = 2D3185AF1DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185B21DE5544100F9EE91 /* RocketDebuggerOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RocketDebuggerOSX.framework;
+			remoteRef = 2D3185B11DE5544100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185B81DE5544B00F9EE91 /* libRenderer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRenderer.a;
+			remoteRef = 2D3185B71DE5544B00F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185BE1DE5545A00F9EE91 /* libSystems.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSystems.a;
+			remoteRef = 2D3185BD1DE5545A00F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185C41DE554B500F9EE91 /* libRuntimeObjectSystem.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRuntimeObjectSystem.a;
+			remoteRef = 2D3185C31DE554B500F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D3185CA1DE554C100F9EE91 /* libRuntimeCompiler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRuntimeCompiler.a;
+			remoteRef = 2D3185C91DE554C100F9EE91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		910A9D9C16230A370032E310 /* Resources */ = {
@@ -478,6 +737,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D3185CC1DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RuntimeCompiler;
+			targetProxy = 2D3185CB1DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185CE1DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RuntimeObjectSystem;
+			targetProxy = 2D3185CD1DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185D01DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Systems;
+			targetProxy = 2D3185CF1DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185D21DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Renderer;
+			targetProxy = 2D3185D11DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185D41DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RocketControlsOSX;
+			targetProxy = 2D3185D31DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185D61DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RocketCoreOSX;
+			targetProxy = 2D3185D51DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+		2D3185D81DE554D400F9EE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RocketDebuggerOSX;
+			targetProxy = 2D3185D71DE554D400F9EE91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		910A9DBA16230A370032E310 /* Debug */ = {
