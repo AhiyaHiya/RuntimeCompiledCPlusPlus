@@ -1,0 +1,13 @@
+//
+//  RuntimeObjectSystem.xcconfig
+//  RuntimeObjectSystem
+//
+//  Created by Jaime Rios on 11/22/16.
+//  Copyright © 2016 Doug Binks. All rights reserved.
+//
+
+GCC_C_LANGUAGE_STANDARD = c11
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+
+INSTALL_PATH = @rpath
