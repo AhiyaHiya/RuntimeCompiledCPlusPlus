@@ -35,20 +35,21 @@ SetupVariables()
 
 BuildFrameworks()
 {
-	cd ${BASEPATH}/Renderer
+	local projectsPath=$1
+	cd ${projectsPath}/Renderer
 	local frameworkBuildPath=${BUILDPATH}/Products/${CONFIG}/Frameworks
 	BuildXcodeProjectForTarget Renderer.xcodeproj Renderer ${CONFIG} ${frameworkBuildPath}
 		
-	cd ${BASEPATH}/RuntimeCompiler
+	cd ${projectsPath}/RuntimeCompiler
 	BuildXcodeProjectForTarget RuntimeCompiler.xcodeproj RuntimeCompiler ${CONFIG} ${frameworkBuildPath}
 
-	cd ${BASEPATH}/RuntimeObjectSystem
+	cd ${projectsPath}/RuntimeObjectSystem
 	BuildXcodeProjectForTarget RuntimeObjectSystem.xcodeproj RuntimeObjectSystem ${CONFIG} ${frameworkBuildPath}
 
-	cd ${BASEPATH}/Systems
+	cd ${projectsPath}/Systems
 	BuildXcodeProjectForTarget Systems.xcodeproj Systems ${CONFIG} ${frameworkBuildPath}
 	
-	cd ${BASEPATH}/External/libRocket/Build
+	cd ${projectsPath}/External/libRocket/Build
 	BuildXcodeProjectForTarget Rocket.xcodeproj RocketControlsOSX ${CONFIG} ${frameworkBuildPath}
 	BuildXcodeProjectForTarget Rocket.xcodeproj RocketDebuggerOSX ${CONFIG} ${frameworkBuildPath}
 }
