@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D8B4E6B1DE508D900D59B52 /* RuntimeObjectSystem.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RuntimeObjectSystem.xcconfig; sourceTree = "<group>"; };
 		910584A716D67FF600FDEAC3 /* RuntimeProtector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeProtector.h; sourceTree = "<group>"; };
 		910987F316441841006315D5 /* RuntimeLinkLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeLinkLibrary.h; sourceTree = "<group>"; };
 		913A25D21619FB7D006AF4C1 /* libRuntimeObjectSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRuntimeObjectSystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +64,7 @@
 		913A25C71619FB7D006AF4C1 = {
 			isa = PBXGroup;
 			children = (
+				2D8B4E6B1DE508D900D59B52 /* RuntimeObjectSystem.xcconfig */,
 				915C293116EB816D00654B4E /* RuntimeObjectSystem_PlatformPosix.cpp */,
 				910987F316441841006315D5 /* RuntimeLinkLibrary.h */,
 				910584A716D67FF600FDEAC3 /* RuntimeProtector.h */,
@@ -196,13 +198,12 @@
 /* Begin XCBuildConfiguration section */
 		913A25D41619FB7D006AF4C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B4E6B1DE508D900D59B52 /* RuntimeObjectSystem.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -223,14 +224,13 @@
 		};
 		913A25D51619FB7D006AF4C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B4E6B1DE508D900D59B52 /* RuntimeObjectSystem.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

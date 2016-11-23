@@ -505,6 +505,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D8B4E6A1DE508C800D59B52 /* Rocket.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Rocket.xcconfig; sourceTree = "<group>"; };
 		6E8B1B0C123A0E2A00C451C8 /* libRocketCoreiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRocketCoreiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8B1BF0123AAEE200C451C8 /* libRocketControlsiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRocketControlsiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8B1C2D123AB0CC00C451C8 /* Clipboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Clipboard.cpp; path = ../Source/Controls/Clipboard.cpp; sourceTree = SOURCE_ROOT; };
@@ -872,6 +873,7 @@
 		0867D691FE84028FC02AAC07 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				2D8B4E6A1DE508C800D59B52 /* Rocket.xcconfig */,
 				6E8B1EB6123AC78300C451C8 /* Debugger */,
 				6E8B1BE2123AADEB00C451C8 /* Controls */,
 				6E8B1BD8123AABCD00C451C8 /* Core */,
@@ -1470,6 +1472,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Rocket" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -1957,14 +1961,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/test.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../support/lib\"",
@@ -1978,11 +1981,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = /tmp/test.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../support/lib\"",
@@ -1993,10 +1995,10 @@
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B4E6A1DE508C800D59B52 /* Rocket.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -2014,10 +2016,10 @@
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B4E6A1DE508C800D59B52 /* Rocket.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -2040,6 +2042,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = RocketControlsiOS;
 				VALID_ARCHS = armv6;
@@ -2054,6 +2057,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = RocketControlsiOS;
 				ZERO_LINK = NO;
@@ -2075,8 +2079,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketCoreOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../support/lib/MacOSX\"",
@@ -2107,8 +2111,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketCoreOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../support/lib/MacOSX\"",
@@ -2141,8 +2145,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketControlsOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -2169,8 +2173,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketControlsOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -2192,6 +2196,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = RocketDebuggeriOS;
 				VALID_ARCHS = armv6;
@@ -2206,6 +2211,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = RocketDebuggeriOS;
 				ZERO_LINK = NO;
@@ -2227,8 +2233,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketDebuggerOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -2255,8 +2261,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rocket_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "plist/RocketDebuggerOSX-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
