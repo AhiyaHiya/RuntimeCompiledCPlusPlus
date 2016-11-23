@@ -24,7 +24,7 @@ BuildXcodeProjectForTarget()
 
 SetupVariables()
 {
-	CONFIG=Debug
+	CONFIG=$1
 	CURRENTPATH=${PWD}
 	cd ${ABSOLUTE_PATH}
 	BUILDPATH=${PWD}/xcbuild
