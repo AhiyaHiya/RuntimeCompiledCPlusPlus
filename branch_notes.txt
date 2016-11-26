@@ -1,0 +1,9 @@
+Experiment 1
+
+The problem with the project is that the splash screen is not loading.
+
+What I have observed so far, is that when I built the project using my shell scripts, the splash screen was loading.
+
+However, when I went down the other paths, where I tried to preserve the project by using the workspace, I saw that the splash screen no longer comes back, but, going back to the original work, where the splash screen was working, no longer works. 
+
+So, the original work I did probably didn't solve the problem, but masked it.
