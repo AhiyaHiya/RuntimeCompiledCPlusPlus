@@ -24,6 +24,8 @@ BuildXcodeProjectForTarget()
 
 SetupVariables()
 {
+	printf "${FUNCNAME[0]}\n"
+	
 	CONFIG=$1
 	CURRENTPATH=${PWD}
 	cd ${ABSOLUTE_PATH}
@@ -35,6 +37,8 @@ SetupVariables()
 
 BuildFrameworks()
 {
+	printf "${FUNCNAME[0]}\n"
+	
 	local projectsPath=$1
 	cd ${projectsPath}/Renderer
 	local frameworkBuildPath=${BUILDPATH}/Products/${CONFIG}/Frameworks
@@ -56,6 +60,8 @@ BuildFrameworks()
 
 CopyFrameworksAndLibs()
 {
+	printf "${FUNCNAME[0]}\n"
+	
 	cd ${ABSOLUTE_PATH}
 	cp -R ${BUILDPATH}/Products/${CONFIG}/Frameworks ${BUILDPATH}/Products/${CONFIG}/SimpleTest.app/Contents/Frameworks
 }
