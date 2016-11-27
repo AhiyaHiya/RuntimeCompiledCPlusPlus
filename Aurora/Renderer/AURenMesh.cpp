@@ -127,6 +127,12 @@ bool AURenMesh::LoadFromFileAML( const std::string& strFilename_ )
 	std::ifstream inFile;
 	inFile.open(strFilename_.c_str(), std::ios::binary);
 
+    if(inFile.is_open()==false)
+    {
+        auto xxx=0;
+        ++xxx;
+    }
+    
 	if( !inFile )
 	{
 		return false;

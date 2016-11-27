@@ -27,6 +27,7 @@
 
 #include "RocketLibSystemFileInterface.h"
 #include <stdio.h>
+#include <cassert>
 
 RocketLibSystemFileInterface::RocketLibSystemFileInterface(const Rocket::Core::String& root) : root(root)
 {
@@ -40,12 +41,24 @@ RocketLibSystemFileInterface::~RocketLibSystemFileInterface()
 Rocket::Core::FileHandle RocketLibSystemFileInterface::Open(const Rocket::Core::String& path)
 {
 	// Attempt to open the file relative to the application's root.
-	FILE* fp = fopen((root + path).CString(), "rb");
+    const auto filepath = std::string{ (root + path).CString() }; // added for debugging
+	FILE* fp = fopen(filepath.c_str(), "rb");
+    if(fp == nullptr)
+    {
+        auto xxx=0;
+        ++xxx;
+    }
 	if (fp != NULL)
 		return (Rocket::Core::FileHandle) fp;
 
 	// Attempt to open the file relative to the current working directory.
-	fp = fopen(path.CString(), "rb");
+    const auto filerl = std::string{path.CString()};// debugging
+	fp = fopen(filerl.c_str(), "rb");
+    if(fp == nullptr)
+    {
+        auto xxx=0;
+        ++xxx;
+    }
 	return (Rocket::Core::FileHandle) fp;
 }
 

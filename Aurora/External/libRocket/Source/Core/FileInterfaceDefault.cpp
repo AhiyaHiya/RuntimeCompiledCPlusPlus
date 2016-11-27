@@ -27,6 +27,7 @@
 
 #include "precompiled.h"
 #include "FileInterfaceDefault.h"
+#include <cassert>
 
 #ifndef ROCKET_NO_FILE_INTERFACE_DEFAULT
 
@@ -40,7 +41,10 @@ FileInterfaceDefault::~FileInterfaceDefault()
 // Opens a file.
 FileHandle FileInterfaceDefault::Open(const String& path)
 {
-	return (FileHandle)fopen(path.CString(), "rb");	
+    const auto filepath = path.CString();//added for debugging
+    const auto fp = fopen(filepath, "rb");
+    assert(fp != nullptr);
+    return (FileHandle)fp;
 }
 
 // Closes a previously opened file.

@@ -90,7 +90,13 @@ void FileLogSystem::LogInternal(ELogVerbosity eVerbosity, const char * format, v
 
 bool FileLogSystem::OpenFile()
 {
-	m_fp = fopen(m_sPath.c_str(),"wt");
+    const auto filepath = m_sPath.c_str();//added for debugging
+	m_fp = fopen(filepath,"wt");
+    if(m_fp == nullptr)
+    {
+        auto xxx=0;
+        ++xxx;
+    }
 	return m_fp;
 }
 
